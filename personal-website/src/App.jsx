@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-import iwc from '../src/assets/general/iwc.svg'
+import iwc from './assets/general/iwc.svg'
 
-import refilla from '../src/assets/projects/refilla-app-icon.png'
-import bure from '../src/assets/projects/BURE-logo.png'
-import raft from '../src/assets/projects/rafticon.svg'
+import refilla from './assets/projects/refilla-app-icon.png'
+import bure from './assets/projects/BURE-logo.png'
+import raft from './assets/projects/rafticon.svg'
 
-import github from '../src/assets/contactme/github.png'
-import gmail from '../src/assets/contactme/gmail.png'
-import leet from '../src/assets/contactme/leet.png'
-import linkedin from '../src/assets/contactme/linkedin.png'
+import github from './assets/contactme/github.png'
+import gmail from './assets/contactme/gmail.png'
+import leet from './assets/contactme/leet.png'
+import linkedin from './assets/contactme/linkedin.png'
 
 
 

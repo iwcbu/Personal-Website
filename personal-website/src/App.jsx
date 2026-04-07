@@ -22,7 +22,7 @@ const projects = [
     learned:
       'Building Refilla highlighted the importance of scalable architecture and strong codebase organization. Managing a project with over 15,000 lines of code taught me to prioritize modularity, separation of concerns, and maintainable patterns to make debugging and feature development more efficient.',
     stack: ['React Native', 'TypeScript', 'SQLite', 'Expo Router'],
-    pic: 'src/assets/projects/refilla-app-icon.png',
+    pic: refilla,
     link: 'https://github.com/iwcbu/Refilla'
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     learned:
       'To collect data for our model, my partner and I built a web scraper that cleaned and normalized a large volume of apartment listing data from Apartments.com into structured features for training. Through experimentation, we identified the strongest predictors of rental price, including bedroom count, bathroom count, and square footage, and used those features to train a model that generated estimates from user-provided inputs. This project gave me hands-on experience building machine learning models and designing data pipelines that aligned closely with model requirements.',
     stack: ['Python', 'Beautiful Soup', 'Django', "JavaScript"],
-    pic: 'src/assets/projects/BURE-logo.png',
+    pic: bure,
     link: 'https://github.com/iwcbu/BURE'
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     learned: 
       'This project taught me a lot about concurrency, modular design, and server side problem solving. Because many of the challenges were difficult to visualize, I learned how important it is to break complex distributed behavior into smaller, understandable parts. It also strengthened my understanding of concurrency, asynchronous execution, and writing modular code that is easier to read, debug, and extend.',
     stack: ['Go', 'Distributed Systems', 'Concurrency',],
-    pic: 'src/assets/projects/rafticon.svg',
+    pic: raft,
     link: 'https://raft.github.io/',
   },
 ]
@@ -116,7 +116,7 @@ function App() {
     <div className="site-shell">
       <header className="hero-section">
         <nav className="topbar" aria-label="Primary">
-          <img src="src/assets/general/iwc.svg" alt="" style={{width: 100}} />
+          <img src={iwc} alt="" style={{width: 100}} />
           <a className="brand" href="#home">
             Ian Campbell
           </a>

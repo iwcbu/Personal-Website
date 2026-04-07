@@ -514,8 +514,8 @@
 
 
   .hero-actions {
-    width: 60%;
-    flex-direction: row;
+    width: 100%;
+    flex-direction: column;
   }
 
   .hero-card {

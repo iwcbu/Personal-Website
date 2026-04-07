@@ -1,6 +1,19 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
+import iwc from '../src/assets/general/iwc.svg'
+
+import refilla from '../src/assets/projects/refilla-app-icon.png'
+import bure from '../src/assets/projects/BURE-logo.png'
+import raft from '../src/assets/projects/rafticon.svg'
+
+import github from '../src/assets/contactme/github.png'
+import gmail from '../src/assets/contactme/gmail.png'
+import leet from '../src/assets/contactme/leet.png'
+import linkedin from '../src/assets/contactme/linkedin.png'
+
+
+
 const projects = [
   {
     title: 'Refilla',
@@ -35,10 +48,10 @@ const projects = [
 ]
 
 const contactLinks = [
-  { label: 'GitHub', value: 'github.com/iwcbu', href: 'https://github.com/iwcbu', pic: 'src/assets/contactme/github.png', size: 50 },
-  { label: 'LeetCode', value: 'leetcode.com/iwc3', href: 'https://leetcode.com/iwc3', pic: 'src/assets/contactme/leet.png', size: 60 },
-  { label: 'Email', value: 'iwc3@bu.edu', href: 'mailto:iwc3@bu.edu', pic: 'src/assets/contactme/gmail.png', size: 40},
-  { label: 'LinkedIn', value: 'linkedin.com/in/iwc', href: 'https://linkedin.com/in/iwc3', pic: 'src/assets/contactme/linkedin.png', size: 55 },
+  { label: 'GitHub', value: 'github.com/iwcbu', href: 'https://github.com/iwcbu', pic: github, size: 50 },
+  { label: 'LeetCode', value: 'leetcode.com/iwc3', href: 'https://leetcode.com/iwc3', pic: leet, size: 60 },
+  { label: 'Email', value: 'iwc3@bu.edu', href: 'mailto:iwc3@bu.edu', pic: gmail, size: 40},
+  { label: 'LinkedIn', value: 'linkedin.com/in/iwc', href: 'https://linkedin.com/in/iwc3', pic: linkedin, size: 55 },
 ]
 
 function App() {

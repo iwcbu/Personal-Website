@@ -1,0 +1,12 @@
+<svg width="160" height="80" viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- background box -->
+  <rect x="0" y="0" width="160" height="80" rx="14" fill="rgba(255, 250, 245, 0.82)" stroke="rgba(103, 79, 58, 0.24)" stroke-width="2"></rect>
+
+  <!-- subtle accent border glow -->
+  <rect x="4" y="4" width="152" height="72" rx="12" fill="none" stroke="rgba(186, 90, 42, 0.35)" stroke-width="1"></rect>
+
+  <!-- text -->
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Instrument Serif, Georgia, serif" font-size="32" fill="#1d160f" letter-spacing="2">
+    IWC
+  </text>
+</svg>

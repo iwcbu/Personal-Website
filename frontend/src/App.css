@@ -111,9 +111,9 @@
 }
 
 .scroll-section.is-past > * {
-  opacity: 0.7;
-  transform: translateY(-1.5rem) scale(0.985);
-  filter: blur(1px);
+  opacity: 0;
+  transform: translateY(-3.5rem) scale(0.985);
+  filter: blur(10px);
 }
 
 .hero-copy,

@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import './App.css';
 
 import Hero from './sections/Hero';
-import Projects from './sections/Projects';
 import About from './sections/About';
 import Contact from './sections/Contact';
+import ProjectOrbit from './sections/OrbitTesting/ProjectsOrbitTest';
 
 
 function App() {
@@ -65,9 +65,9 @@ function App() {
     <div className="site-shell">
         <Hero />
 
+        <ProjectOrbit />
         <main>
 
-            <Projects />
             <About />
             <Contact />
 

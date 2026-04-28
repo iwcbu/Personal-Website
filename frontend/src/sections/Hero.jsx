@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 
 export default function Hero() {
 

@@ -2,7 +2,7 @@
   margin: 0 auto;
   max-width: 90%;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .site-shell::before,
@@ -38,48 +38,6 @@
   z-index: 1;
 }
 
-.topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  padding: 1.5rem 0 0;
-}
-
-.brand,
-.nav-links a {
-  color: var(--text-strong);
-  text-decoration: none;
-  display: flex;
-  flex: 1;
-}
-
-.brand {
-  font-family: var(--heading);
-  font-size: 1.1rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.nav-links a {
-  font-size: 0.98rem;
-  color: var(--text-muted);
-  transition:
-    color 180ms ease,
-    transform 180ms ease;
-}
-
-.nav-links a:hover,
-.nav-links a:focus-visible {
-  color: var(--text-strong);
-  transform: translateY(-1px);
-}
 
 .hero-panel {
   display: grid;

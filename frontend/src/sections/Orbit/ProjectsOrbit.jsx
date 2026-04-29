@@ -24,10 +24,6 @@ function OrbitPlanet({ project, isActive, scrollYProgress }) {
     <div className={`planet-anchor ${project.orbitClass}`}>
       <motion.div
         className={`planet ${isActive ? "is-active" : ""}`}
-        animate={{
-          y: isActive ? -40 : 0,
-          scale: isActive ? 1.2 : 1,
-        }}
         transition={{
           type: "spring",
           stiffness: 120,
@@ -166,7 +162,15 @@ export default function ProjectOrbit() {
   }, []);
 
   return (
+
     <section ref={ref} className="orbit-section">
+
+      <div className="space-header">
+        <h1>
+          Recent Projects
+        </h1>
+      </div>
+
       <div className="orbit-sticky">
         <div className="orbit-story-stage">
           <div className="orbit-stage">

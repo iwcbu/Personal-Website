@@ -4,7 +4,7 @@ import './App.css';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Contact from './sections/Contact';
-import ProjectOrbit from './sections/OrbitTesting/ProjectsOrbitTest';
+import ProjectOrbit from './sections/Orbit/ProjectsOrbit';
 
 
 function App() {

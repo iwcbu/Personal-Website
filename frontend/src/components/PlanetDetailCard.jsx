@@ -2,8 +2,12 @@ import { motion } from 'motion/react';
 
 export default function PlanetDetailCard({ project }) {
 
+    const handleClick = (link) => {
+        window.location.href = project.link;
+        
+    };
+
     return (
-        <a href={`${project.link}`} style={{ textDecoration: "none"}}>
         <motion.article
             key={project.shortName}
             className="orbit-detail-card"
@@ -11,10 +15,10 @@ export default function PlanetDetailCard({ project }) {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -24, scale: 0.96 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
-        >
+        >  
         
             <h3>{project.title}</h3>
-
+            
             <div className="tag-row">
                 {project.stack.map((item) => (
                     <span className="tag" key={item}>{item}</span>
@@ -33,7 +37,6 @@ export default function PlanetDetailCard({ project }) {
                 </section>
             </div>
         </motion.article>
-        </a>
     )
 
 

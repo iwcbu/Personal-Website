@@ -39,6 +39,10 @@
 }
 
 
+.hero-section {
+  margin-top: 15px;
+}
+
 .hero-panel {
   display: grid;
   grid-template-columns: 1fr;

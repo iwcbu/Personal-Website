@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './App.css';
 
 import Hero from './sections/Hero';
@@ -9,6 +9,30 @@ import ProjectOrbit from './sections/Orbit/ProjectsOrbit';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false)
+
+  const [projectIndex, setProjectIndex] = useState(0);
+  const [inProjectSection, setInProjectSection] = useState(false);
+  const projectStepRefs = useRef([]);
+
+  
+  const nextProject = () => {
+    const nextIndex = Math.min(projectIndex + 1, 2);
+    
+    projectStepRefs.current[nextIndex]?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  };
+
+  const prevProject = () => {
+    const prevIndex = Math.max(projectIndex - 1, 0);
+      
+      projectStepRefs.current[prevIndex]?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        
+      });
+  };
 
   useEffect(() => {
     const sections = Array.from(document.querySelectorAll('[data-scroll-section]'))
@@ -65,7 +89,12 @@ function App() {
     <div className="site-shell">
         <Hero />
 
-        <ProjectOrbit />
+        <ProjectOrbit 
+          projectIndex={projectIndex}
+          onProjectIndexChange={setProjectIndex}
+          onProjectSectionChange={setInProjectSection}
+          projectStepRefs={projectStepRefs}
+        />
         <main>
 
             <About />
@@ -81,6 +110,37 @@ function App() {
         >
           ↑
         </button>
+
+          <div className='pn-button-box'> 
+            <button
+              type="button"
+              className={`project-nav-button project-nav-prev ${
+                projectIndex > 0 && inProjectSection ? "is-visible" : ""
+                }`}
+                onClick={prevProject}
+                disabled={projectIndex === 0}
+                aria-label="Previous project"
+                >
+              <p>
+                ‹
+              </p>
+            </button>
+
+            <button
+              type="button"
+              className={`project-nav-button project-nav-next ${
+                projectIndex < 2 && inProjectSection ? "is-visible" : ""
+                }`}
+                onClick={nextProject}
+                disabled={projectIndex === 2}
+                aria-label="Next project"
+                >
+              <p>
+                ›
+              </p>
+            </button>
+          </div>
+
     </div>
   )
 }

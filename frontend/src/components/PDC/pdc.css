@@ -1,0 +1,79 @@
+.orbit-detail-card {
+  padding: clamp(0.9rem, 1.6vw, 1.6rem);
+  gap: clamp(0.5rem, 1vw, 1rem);
+  border-radius: clamp(1rem, 1.6vw, 1.6rem);
+  margin: 0 auto;
+  display: grid;
+  background: rgba(11, 22, 38, 0.78);
+  border: 1px solid rgba(163, 192, 255, 0.14);
+  backdrop-filter: blur(16px);
+
+  pointer-events: auto;
+  position: relative;
+  z-index: 101;
+}
+
+
+.orbit-detail-card a {
+  text-decoration: none;
+}
+
+.orbit-detail-card h3 {
+  font-size: clamp(1.2rem, 2.6vw, 18px);
+  text-align: center;
+  margin: 0;
+  color: aliceblue;
+}
+
+.orbit-detail-card .tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+}
+
+.orbit-detail-card .tag {
+  font-size: clamp(0.65rem, 1vw, 12px);
+  padding: clamp(0.3rem, 0.6vw, 0.55rem) clamp(0.35rem, 0.9vw, 0.7rem);
+  color: aliceblue;
+  background-color: rgba(108, 191, 255, 0.523);
+  border-radius: 999px;
+}
+
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding:0 1rem;
+  gap: 10px;
+}
+
+.project-detail-grid section {
+  border-radius: 0.9rem;
+  color: azure;
+}
+
+.project-detail-grid h4 {
+  font-size: clamp(0.8rem, 1.2vw, 12px);
+  margin: 0 0 0.45rem;
+}
+
+
+.project-detail-grid button {
+  background-color: #ffffff00;
+  color:#f7f5f5;
+  border: 0px;
+}
+
+.project-detail-grid p {
+  font-size: clamp(0.55rem, 1vw, 12px);
+  line-height: 1.45;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+    .project-detail-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+        
+    }
+}

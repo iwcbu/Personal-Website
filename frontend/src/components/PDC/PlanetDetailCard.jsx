@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
+import { useState } from 'react';
+import "./pdc.css";
+
 
 export default function PlanetDetailCard({ project }) {
 
-    const handleClick = (link) => {
-        window.location.href = project.link;
-        
-    };
+
 
     return (
         <motion.article
@@ -21,19 +21,21 @@ export default function PlanetDetailCard({ project }) {
             
             <div className="tag-row">
                 {project.stack.map((item) => (
-                    <span className="tag" key={item}>{item}</span>
+                    <span className="tag" key={item}>
+                        {item}
+                    </span>
                 ))}
             </div>
 
             <div className="project-detail-grid">
                 <section>
-                <h4>What it is</h4>
-                <p>{project.summary}</p>
+                    <h4>What it is</h4>
+                    <p>{project.summary}</p>
                 </section>
 
                 <section>
-                <h4>What I learned</h4>
-                <p>{project.learned}</p>
+                    <h4>What I learned</h4>
+                    <p>{project.learned}</p>
                 </section>
             </div>
         </motion.article>

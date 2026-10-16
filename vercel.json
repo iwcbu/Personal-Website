@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/:path*",
-      "destination": "https://iwc.dev",
+      "destination": "https://iwc3.dev",
       "permanent": true
     }
   ]
